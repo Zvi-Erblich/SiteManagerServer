@@ -31,9 +31,9 @@ namespace SiteManagerServer.Controllers
 
             if (foundUser == null)
             {
-                return Ok(false);  
+                return Unauthorized(false);  
             }
-            
+
             return Ok(true);
         }
         

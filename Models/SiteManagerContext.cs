@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using SiteManagerServer.Models;
 
 namespace SiteManagerServer.Models;
 
@@ -13,6 +12,7 @@ public class SiteManagerContext : DbContext
     public DbSet<Site> Sites { get; set; } = null!;
     public DbSet<Product> Product { get; set; } = null!;
     public DbSet<User> Users { get; set; } = null!;
+    public DbSet<Order> Orders { get; set; } = null!;
 
 
 }
